@@ -10,7 +10,7 @@ public class Car {
         this.model = "Mustang";
         this.year = 2019;
         this.color = "black";
-        this.speed = 0;
+        this.setSpeed(0);
     }
 
     public Car(String make, String model, int year, String color){
@@ -18,8 +18,9 @@ public class Car {
         this.model = model;
         this.year = year;
         this.color = color;
-        this.speed = 0;
+        this.setSpeed(0);
     }
+
 
     public String getMake(){
         return make;
@@ -54,10 +55,18 @@ public class Car {
     }
 
     public void move(double speed){
-        this.speed = speed;
+        this.setSpeed(speed);
     }
 
     public void stop(){
-        this.speed = 0;
+        this.setSpeed(0);
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
     }
 }
