@@ -69,4 +69,8 @@ public class Car {
     public void setSpeed(double speed) {
         this.speed = speed;
     }
+
+    public static double convertMPHtoKMH (double mph){
+        return mph * 1.60934;
+    }
 }

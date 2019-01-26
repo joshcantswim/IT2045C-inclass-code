@@ -19,6 +19,8 @@ public class Program {
         car2.move(65);
         System.out.println("car2 speed = " + car2.getSpeed());
 
+        System.out.println("55 Mph = " + Car.convertMPHtoKMH(55)+ "KMH");
+
 
     }
 }
