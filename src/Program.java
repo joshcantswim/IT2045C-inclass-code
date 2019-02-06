@@ -16,6 +16,22 @@ public class Program {
         System.out.println(question1.checkAnswer(userResponse));
 
 
+        ChoiceQuestion question2 = new ChoiceQuestion();
+        question2.setText("What was the first name for Java?");
+        question2.addChoice("Duke", false);
+        question2.addChoice("Oak", true);
+        question2.addChoice("C#", false);
+
+        question2.display();
+        String userResponse2 = in.nextLine();
+        System.out.println(question2.checkAnswer(userResponse2));
+
+
+
+
+
+
+
 
 
     }
